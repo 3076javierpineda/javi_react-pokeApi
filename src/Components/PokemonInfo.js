@@ -25,7 +25,6 @@ const PokemonInfo = () => {
 
   return (
     <div className='bodySection'>
-        
         <div>
             <h2 className='titleInput'>información pokemon</h2>
             <Form className='inputSection'onSubmit={handleSubmit}>
@@ -37,14 +36,12 @@ const PokemonInfo = () => {
                         value={pokemonName}
                         onChange={handleChange}
                     />
-                  <Button className="btn btn-custom" variant="primary" type="submit">
-                    ELIGEME
-                  </Button>
+                    <Button className="btn btn-custom" variant="primary" type="submit">
+                      ELíGEME
+                    </Button>
                 </Form.Group>
-                
             </Form>
         </div>
-
         <div className='answerSection'>
             {pokemonData && (
                 <Card style={{ width: '18rem' }}>
@@ -57,7 +54,7 @@ const PokemonInfo = () => {
                             <strong>HABILIDADES</strong>
                             <ul>
                                 {pokemonData.abilities.map((ability, index) => (
-                                <li key={index}>{ability.ability.name}</li>
+                                    <li key={index}>{ability.ability.name}</li>
                                 ))}
                             </ul>
                         </Card.Text>
@@ -65,12 +62,7 @@ const PokemonInfo = () => {
                 </Card>
             )}
         </div>
-
-        
     </div>
-
-
-
   );
 };
 
