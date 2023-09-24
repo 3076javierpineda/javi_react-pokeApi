@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.assetLogo{
+  background-color: #303030;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 115px;
+  justify-content: space-around;
+  border: 3px solid  rgba(255, 201, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokeImg{
+  width: 90px;
+  height: 90px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoImg{
+  width: 300px;
+  
+}
+
+.bodySection{
+  background-image: url(./Image/poke\ fondo.jpg);
+  opacity: 0.9;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.titleInput{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
+
+.formInput{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labelNamePokemon{
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 600px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputNamePokemon{
+  height: 23px;
+  width: 180px;
+  border-radius: 10px;
+  padding: 5px;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-custom {
+  background-color: rgba(255, 201, 0);
+  color:  #303030;
+  border: 3px solid rgba(0, 118, 186);
+  width: 120px;
+  height: 35px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.inputSection{
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.answerSection{
+  background-color: rgba(255, 201, 0);
+  opacity: 0.9;
+  width: 150px;
+  height: 250px;
+  padding: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 118, 186);
+  box-shadow: 20px 10px 5px rgba(0,0,0,0.6);
+}
+
+.answerImg {
+  width: 150px;
+}
+
+.tradeMark{
+  background-color: #303030;
+  border: 3px solid  rgba(0, 118, 186);
+  height:75px;
+  color:  #303030;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: rgba(255, 201, 0);
 }
